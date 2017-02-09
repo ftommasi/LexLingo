@@ -6,7 +6,7 @@ PC  [,.:;\s\t ]
 
 
 %%
-{PC}"" {ECHO;}
+{PC}  {ECHO;}
 ^"lol"$ {printf("laugh out loud");}
 ^"sry"$ {printf("sorry");}
 ^"plz"$ {printf("please");}
@@ -47,43 +47,43 @@ PC  [,.:;\s\t ]
 ^"ftfy"$ {printf("fixed that for you");}
 ^"thx"$ {printf("thanks");}
 ^"l8r"$ {printf("later");}
-{PC}"lol" { printf("laugh out loud");}
-{PC}"sry" {printf("sorry");}
-{PC}"plz" {printf("please");}
-{PC}"b4" {printf("before");}
-{PC}"btw" {printf("by the way");}
-{PC}"brb" {printf("be right back");}
-{PC}"cya" {printf("see ya");}
-{PC}"eli5" {printf("explain like I'm five");}
-{PC}"imo" {printf("in my opinion");}
-{PC}"afaik" {printf("as far as I know");}
-{PC}"ofc" {printf("of course");}
-{PC}"brb" {printf("be right back");}
-{PC}"afk" {printf("away from keyboard");}
-{PC}"lmk" {printf("let me know");}
-{PC}"g2g" {printf("good to go");}
-{PC}"ttyl" {printf("talk to you later");}
-{PC}"rtm" {printf("read the manual");}
-{PC}"ftfy" {printf("fixed that for you");}
-{PC}"thx" {printf("thanks");}
-{PC}"l8r" {printf("later");}
-{PC}"lol" {printf("laugh out loud");}
-{PC}"sry" {printf("sorry");}
-{PC}"plz" {printf("please");}
-{PC}"b4" {printf("before");}
-{PC}"btw" {printf("by the way");}
-{PC}"brb" {printf("be right back");}
-{PC}"cya" {printf("see ya");}
-{PC}"eli5" {printf("explain like I'm five");}
-{PC}"imo" {printf("in my opinion");}
-{PC}"afaik" {printf("as far as I know");}
-{PC}"ofc" {printf("of course");}
-{PC}"brb" {printf("be right back");}
-{PC}"afk" {printf("away from keyboard");}
-{PC}"lmk" {printf("let me know");}
-{PC}"g2g" {printf("good to go");}
-{PC}"ttyl" {printf("talk to you later");}
-{PC}"rtm" {printf("read the manual");}
-{PC}"ftfy" {printf("fixed that for you");}
-{PC}"thx" {printf("thanks");}
-{PC}"l8r" {printf("later");}
+{PC}"lol" { printf("%claugh out loud",yytext[0]);}
+{PC}"sry" {printf("%csorry",yytext[0]);}
+{PC}"plz" {printf("%cplease",yytext[0]);}
+{PC}"b4" {printf("%cbefore",yytext[0]);}
+{PC}"btw" {printf("%cby the way",yytext[0]);}
+{PC}"brb" {printf("%cbe right back",yytext[0]);}
+{PC}"cya" {printf("%csee ya",yytext[0]);}
+{PC}"eli5" {printf("%cexplain like I'm five",yytext[0]);}
+{PC}"imo" {printf("%cin my opinion",yytext[0]);}
+{PC}"afaik" {printf("%cas far as I know",yytext[0]);}
+{PC}"ofc" {printf("%cof course",yytext[0]);}
+{PC}"brb" {printf("%cbe right back",yytext[0]);}
+{PC}"afk" {printf("%caway from keyboard",yytext[0]);}
+{PC}"lmk" {printf("%clet me know",yytext[0]);}
+{PC}"g2g" {printf("%cgood to go",yytext[0]);}
+{PC}"ttyl" {printf("%ctalk to you later",yytext[0]);}
+{PC}"rtm" {printf("%cread the manual",yytext[0]);}
+{PC}"ftfy" {printf("%cfixed that for you",yytext[0]);}
+{PC}"thx" {printf("%cthanks",yytext[0]);}
+{PC}"l8r" {printf("%clater",yytext[0]);}
+{PC}"lol" {printf("%claugh out loud",yytext[0]);}
+{PC}"sry" {printf("%csorry",yytext[0]);}
+{PC}"plz" {printf("%cplease",yytext[0]);}
+{PC}"b4" {printf("%cbefore",yytext[0]);}
+{PC}"btw" {printf("%cby the way",yytext[0]);}
+{PC}"brb" {printf("%cbe right back",yytext[0]);}
+{PC}"cya" {printf("%csee ya",yytext[0]);}
+{PC}"eli5" {printf("%cexplain like I'm five",yytext[0]);}
+{PC}"imo" {printf("%cin my opinion",yytext[0]);}
+{PC}"afaik" {printf("%cas far as I know",yytext[0]);}
+{PC}"ofc" {printf("%cof course",yytext[0]);}
+{PC}"brb" {printf("%cbe right back",yytext[0]);}
+{PC}"afk" {printf("%caway from keyboard",yytext[0]);}
+{PC}"lmk" {printf("%clet me know",yytext[0]);}
+{PC}"g2g" {printf("%cgood to go",yytext[0]);}
+{PC}"ttyl" {printf("%ctalk to you later",yytext[0]);}
+{PC}"rtm" {printf("%cread the manual",yytext[0]);}
+{PC}"ftfy" {printf("%cfixed that for you",yytext[0]);}
+{PC}"thx" {printf("%cthanks",yytext[0]);}
+{PC}"l8r" {printf("%clater",yytext[0]);}
